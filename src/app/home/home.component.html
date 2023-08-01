@@ -1,0 +1,24 @@
+<div>
+  <label for="name">Unesite ime:</label>
+  <input type="text" [(ngModel)]="name" name="name" />
+  <button (click)="onSubmit()">
+    Submit
+  </button>
+</div>
+<div *ngIf="isLoading">
+  <app-loader></app-loader>
+</div>
+<div *ngIf="age && gender && country && !isLoading">
+  <h3>Results for "{{ name }}"</h3>
+  <p>Gender: {{ gender.gender }}</p>
+  <p>Age: {{ age.age }}</p>
+  <p>Country:</p>
+  <ul>
+    <li *ngFor="let country of country | slice : 0 : 3">
+      {{ country.country_id }} - {{ country.probability | probability | number:'1.2-2'}} %
+    </li>
+  </ul>
+</div>
+<!-- prikazati loader dok se poziva bekend i skloniti ga kada dobijes response -->
+<!-- procente srediti na dve decimale-->
+<!-- zastavice pored drzave -->

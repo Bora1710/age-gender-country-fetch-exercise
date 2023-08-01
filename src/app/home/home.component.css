@@ -1,0 +1,75 @@
+/* Reset default margin and padding for the whole page */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Set background color and center the content vertically and horizontally */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f2f2f2; /* Change to your desired background color */
+}
+
+/* Styling for the container div */
+div {
+  text-align: center;
+  background-color: #fff; /* Change to your desired background color */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+}
+
+/* Styling for the input field and label */
+input {
+  padding: 8px;
+  border: 1px solid #ccc; /* Add a border to the input field */
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+/* Styling for the submit button */
+button {
+  padding: 10px 20px;
+  background-color: #007BFF; /* Change to your desired button color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Styling for the results section */
+h3 {
+  margin-top: 20px;
+}
+
+p {
+  margin: 5px 0;
+}
+
+/* Styling for the list of countries */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 5px 0;
+}
+
+/* Add a media query for responsiveness on smaller screens */
+@media (max-width: 768px) {
+  div {
+    max-width: 80%; /* Adjust the width as needed for smaller screens */
+  }
+}
+
