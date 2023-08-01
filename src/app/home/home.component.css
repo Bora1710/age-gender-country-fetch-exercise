@@ -1,5 +1,6 @@
 /* Reset default margin and padding for the whole page */
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -39,7 +40,7 @@ label {
 /* Styling for the submit button */
 button {
   padding: 10px 20px;
-  background-color: #007BFF; /* Change to your desired button color */
+  background-color: #007bff; /* Change to your desired button color */
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -72,4 +73,3 @@ li {
     max-width: 80%; /* Adjust the width as needed for smaller screens */
   }
 }
-

@@ -5,7 +5,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class ProbabilityPipe implements PipeTransform {
   transform(value: number): number {
-    if(isNaN(value)){
+    if (isNaN(value)) {
       return 0;
     }
     return value * 100;
